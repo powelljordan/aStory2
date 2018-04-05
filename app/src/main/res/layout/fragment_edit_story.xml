@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="story" type="com.example.powelljordan.astory.models.Story"/>
+        <variable name="user" type="com.example.powelljordan.astory.models.User"/>
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:hint="@string/story_title_hint"
+            android:id="@+id/story_title"
+            android:paddingBottom="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textSize="20dp"
+            android:hint="@string/story_content_hint"
+            android:id="@+id/story_text_content"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_story_button_text"
+            android:id="@+id/save_story_button"/>
+
+    </LinearLayout>
+</layout>
